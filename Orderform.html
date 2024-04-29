@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style type="text/css">
+  </style>
+</head>
+
+<body id="Body">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Merienda:wght@300..900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="design.css">
+  <!--SURNAME, FIRSTNAME-->
+  <!--DATE-->
+  <form action="get" id="Order">
+    <h1>Customer Information </h1>
+    <table id="customer-info">
+      <tr>
+        <td><label for="name">Name:</label></td>
+        <td><input type="text" name="name" id="name" placeholder="Name" required></td>
+      </tr>
+      <tr>
+        <td><label for="address">Address:</label></td>
+        <td><input type="text" name="address" id="address" placeholder="Address" required></td>
+      </tr>
+      <tr>
+        <td><label for="email">Email:</label></td>
+        <td><input type="email" id="email" placeholder="Riczyre123@gmail.com" required></td>
+      </tr>
+      <tr>
+        <td><label for="tel">Telephone Number:</label></td>
+        <td><input type="tel" name="" id="tel" placeholder="0909-090-0909" required></td>
+      </tr>
+      <tr>
+        <td><label for="comments"> Description of how to get to the place:</label></td>
+        <td><textarea name="comments" id="comments" cols="23" rows="3" style="resize: none;"></textarea></td>
+      </tr>
+
+      <tr>
+        <td><label for="schedule">Date/Time of the Dellivery:</label></td>
+        <td><input type="datetime-local" name="" id="Schedule" required></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="Order Now!!" onclick="ordernow()"></td>
+      </tr>
+    </table>
+  </form>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br id="Menu"><br><br><br><br><br><br>
+  <div id="menu">
+    <h1>Foods</h1>
+    <p>Click the picture of the food you want to order:</p>
+    <div class="choices">
+      <figure>
+        <a href="#burger"><img src="burger.png" alt="" class="burger""></a><br>
+          <figcaption><h4>Burger</h4></figcaption>
+      </figure>
+      <figure>
+        <a href=" #fries"><img src="fries.png" alt="" class="fries"></a><br>
+        <figcaption>
+          <h4>Fries</h4>
+        </figcaption>
+      </figure>
+      <figure>
+        <a href="#drinks"><img src="drinks.png" alt="" class="drinks"></a><br>
+        <figcaption>
+          <h4>Drinks</h4>
+        </figcaption>
+      </figure>
+      <figure>
+        <a href="#pasta"><img src="pasta.png" alt="" class="pasta"></a><br>
+        <figcaption>
+          <h4>Pasta</h4>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br id="burger">
+  <form action="get" id="Burger">
+    <table>
+      <h1>Burger</h1>
+      <tr>
+        <td>Pick a Bun:</td>
+        <td>
+          <div class="buns">
+            <figure>
+              <label for="White"><img src="whitebuns.png" alt=""></label>
+              <figcaption>
+                <input type="radio" name="section" id="White" required>
+                <label for="White">White Bun</label>
+              </figcaption>
+            </figure>
+            <br>
+            <figure>
+              <label for="Wheat"><img src="wheatbuns.png" alt=""></label>
+              <figcaption>
+                <input type="radio" name="section" id="Wheat" required>
+                <label for="Wheat">Wheat Bun</label>
+              </figcaption>
+            </figure>
+          </div>
+        </td>
+      </tr>
+      <hr>
+      <tr>
+        <td>Choose a Patty:</td>
+        <td>
+          <div class="patty">
+            <figure>
+              <label for="Single"><img src="singlepatty.png" alt=""></label>
+              <figcaption>
+                <input type="radio" name="section" id="Single" required>
+                <label for="Single">Single Patty</label>
+              </figcaption>
+            </figure>
+            <br>
+            <figure>
+              <label for="Double"><img src="doublepatty.png" alt=""></label>
+              <figcaption>
+                <input type="radio" name="section" id="Double" required>
+                <label for="Double" style="width: 75px;">Double Patty</label>
+              </figcaption>
+            </figure>
+          </div>
+        </td>
+      </tr>
+      <hr>
+      <tr>
+        <td>Choose your Toppings:</td>
+        <td>
+          <div>
+            <div class="collumn">
+              <figure>
+                <label for="cheese"><img src="chesee.png" alt=""></label>
+                <figcaption>
+                  <input type="checkbox" name="section" id="cheese">
+                  <label for="cheese">cheese</label>
+                </figcaption>
+              </figure>
+              <figure>
+                <label for="coleslaw"><img src="coleslaw.png" alt=""></label>
+                <figcaption>
+                  <input type="checkbox" name="section" id="coleslaw">
+                  <label for="coleslaw">coleslaw</label>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="collumn">
+              <figure>
+                <label for="tomato"><img src="tomato.png" alt=""></label>
+                <figcaption>
+                  <input type="checkbox" name="section" id="tomato">
+                  <label for="tomato">tomato</label>
+                </figcaption>
+              </figure>
+              <figure>
+                <label for="onion"><img src="onion.png" alt=""></label>
+                <figcaption>
+                  <input type="checkbox" name="section" id="onion">
+                  <label for="onion">onion</label>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="collumn">
+              <figure>
+                <label for="cucumber"><img src="cucumber.png" alt=""></label>
+                <figcaption>
+                  <input type="checkbox" name="section" id="cucumber">
+                  <label for="cucumber">cucumber</label>
+                </figcaption>
+              </figure>
+              <figure>
+                <label for="bacon"><img src="bacon.png" alt=""></label>
+                <figcaption>
+                  <input type="checkbox" name="section" id="bacon">
+                  <label for="bacon">bacon</label>
+                </figcaption>
+              </figure>
+              <figure>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="Quantity">Quantity:</label></td>
+        <td><input type="number" name="" id="Quantity" min="0" required></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="Add More Food" onclick="addmoreBurger()"></td>
+        <td><input type="button" value="Check Out" onclick="checkout()"></td>
+      </tr>
+    </table>
+  </form>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br
+    id="fries"><br><br><br><br><br><br><br>
+  <form action="get" id="Fries">
+    <table>
+      <h1>Fries</h1>
+      <tr>
+        <td>
+          <img src="largefries.png" alt="">
+        </td>
+        <td>
+          <select name="flavor" id="size" size="1" required>
+            <option value="">Select a Size</option>
+            <option value="barbeque">Small fries </option>
+            <option value="cheese">Medium fries</option>
+            <option value="large">Large fries</option>
+          </select>
+        </td>
+        <td>
+          <select name="flavor" id="size" size="1" required>
+            <option value="">Select a Flavor</option>
+            <option value="barbeque">Barbeque </option>
+            <option value="cheese">Cheese</option>
+            <option value="sour">Sour Cream</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="Quantity">Quantity:</label></td>
+        <td><input type="number" name="" id="Quantity" required></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="Add More Food" onclick="addmoreFries()"></td>
+        <td><input type="button" value="Check Out" onclick="checkout()"></td>
+      </tr>
+    </table>
+  </form>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br
+    id="pasta"><br><br><br><br><br><br>
+  <form action="get" id="Pasta">
+    <table>
+      <h1>Pasta</h1>
+      <tr>
+        <td>Choose a Sauce:</td>
+        <td>
+          <figure>
+            <label for="carbonara"><img src="carbonara.png" alt="" required></label>
+            <figcaption>
+              <input type="radio" name="section" id="carbonara">
+              <label for="carbonara">Carbonara</label>
+            </figcaption>
+          </figure>
+        </td>
+        <td>
+          <figure>
+            <label for="pesto"><img src="pesto.png" alt="" required></label>
+            <figcaption>
+              <input type="radio" name="section" id="pesto">
+              <label for="pesto">Pesto</label>
+            </figcaption>
+          </figure>
+        <td>
+          <figure>
+            <label for="spaghetti"><img src="spag.png" alt="" required></label>
+            <figcaption>
+              <input type="radio" name="section" id="spaghetti">
+              <label for="spaghetti">Spaghetti</label>
+            </figcaption>
+          </figure>
+        </td>
+      </tr>
+      <tr>
+        <td>Add Extra:</td>
+        <td>
+          <figure>
+            <label for="echeese"><img src="echeese.png" alt=""></label>
+            <figcaption>
+              <input type="checkbox" name="section" id="echeese">
+              <label for="echeese">Cheese</label>
+            </figcaption>
+          </figure>
+        </td>
+        <td>
+          <figure>
+            <label for="sauce"><img src="sauce.png" alt=""></label>
+            <figcaption>
+              <input type="checkbox" name="section" id="sauce">
+              <label for="sauce">Sauce</label>
+            </figcaption>
+          </figure>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="Quantity">Quantity:</label></td>
+        <td><input type="number" name="" id="Quantity" required></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="Add More Food" onclick="addmorePasta()"></td>
+        <td><input type="button" value="Check Out" onclick="checkout()"></td>
+      </tr>
+    </table>
+  </form>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br
+    id="drinks"><br><br><br>
+  <form action="get" id="Drinks">
+    <table>
+      <h1>Drinks</h1>
+      <tr>
+        <td>
+          <img src="softdrinks.png" alt="">
+        </td>
+        <td>
+          <select name="size" id="size" size="1" required>
+            <option value="">Select a Size</option>
+            <option value="Coke">Coke</option>
+            <option value="Royal">Royal</option>
+            <option value="Sprite">Sprite</option>
+            <option value="Mountain Dew">Mountain Dew</option>
+          </select>
+        </td>
+        <td>
+          <select name="size" id="size" size="1" required>
+            <option value="">Select a Size</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </td>
+      <tr>
+        <td><label for="Quantity">Quantity:</label></td>
+        <td><input type="number" name="" id="Quantity" required></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="Add More Food" onclick="addmoreDrinks()"></td>
+        <td><input type="button" value="Check Out" onclick="checkout()"></td>
+      </tr>
+    </table>
+  </form>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <form action="Thankyou.html" id="checkout">
+    <fieldset>
+      <legend>Feedback</legend>
+      <label for="feedback">How can we improve the ordering form?</label><br>
+      <textarea id="feedback" name="feedback" cols="100" rows="7" style="resize: none;" required></textarea><br><br>
+
+      <label for="proof_payment">Upload proof of payment:</label><br>
+      <input type="file" id="proof_payment" name="proof_payment" style="margin-top: 10px;" accept="image/*"
+        required><br><br>
+
+      <label for="delivery_rating">Rate our Delivery Service (0-10):</label><br>
+      <input type="range" id="delivery_rating" name="delivery_rating" min="0" max="10" step="1" required><br><br>
+
+      <label for="delivery_option">Delivery or Pick-up:</label><br>
+      <input type="radio" id="delivery" name="delivery_option" value="Delivery" required>
+      <label for="delivery">Delivery</label><br>
+      <input type="radio" id="pickup" name="delivery_option" value="Pick-up" required>
+      <label for="pickup">Pick-up</label><br><br>
+
+      <input type="submit" value="Submit Form">
+      <input type="reset" value="Clear Form">
+    </fieldset>
+  </form>
+
+  <script>
+    function ordernow() {
+      window.location.href = "#Menu";
+    }
+    function addmoreBurger() {
+      window.location.href = "#Burger";
+      alert("Do you want to add more??");
+      alert("Order saved");
+    }
+    function addmoreFries() {
+      window.location.href = "#Fries";
+      alert("Do you want to add more??");
+      alert("Order saved");
+    }
+    function addmorePasta() {
+      window.location.href = "#Pasta";
+      alert("Do you want to add more??");
+      alert("Order saved");
+    }
+    function addmoreDrinks() {
+      window.location.href = "#Drinks";
+      alert("Do you want to add more??");
+      alert("Order saved");
+    }
+    function checkout() {
+      alert("Is that all");
+      alert("order received");
+      window.location.href = "#checkout";
+    }
+  </script>
+</body>
+
+</html>

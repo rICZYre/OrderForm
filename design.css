@@ -1,0 +1,239 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(Vector\ Cartoon\ Fast\ Food\ Seamless\ Pattern.jpg);
+}
+
+table,tr,td {
+  width: 60%;
+  padding: 20px;
+  margin: auto;
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+}
+form {
+  border: 1px solid black;
+  margin: auto;
+  max-width: 70%;
+  padding: 20px;
+  background-color: aliceblue;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1 {
+  margin: auto;
+    font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 50px;
+}
+#Order input{
+  width: 95%;
+}
+#Order label{
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+#customer-info a{
+  width: 64px;
+  height: 30px;
+}
+#menu{
+  border: 1px solid black;
+  margin: auto;
+  max-width: 70%;
+  padding: 20px;
+  background-color: aliceblue;
+  margin-top: 50px;
+}
+#menu figure{
+  width: 130px;
+  text-align: center;
+}
+#menu figcaption{
+  text-align: center;
+  display: block;
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+  width: 130px;
+}
+#menu p{
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+}
+img:hover{
+  filter: drop-shadow( 8px 7px 3px gray);
+}
+#menu figure:hover{
+  filter: drop-shadow(2px 1px 1px gray);
+}
+.choices{
+  display: flex;
+  flex-wrap: wrap;
+}
+.choices div{
+  width: 100%;
+  flex-grow: 1;
+  flex-basis: 200;
+  column-gap: 100px;
+}
+.burger, .drinks, .fries,.pasta{
+  width: 100px;
+  height: 100px;
+  flex-grow: 1;
+  flex-basis: 200;
+}
+#Burger label{
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 17px;
+  width: 200px;
+}
+#Burger figure{
+    width: 130px;
+    text-align: center;
+}
+#Burger img{
+  width: 100px;
+  height: 100px;
+}
+#Burger .buns{
+  display: flex;
+  gap: 50px;
+  margin-left: 100px;
+}
+#Burger .patty{
+  display: flex;
+  gap: 50px;
+  margin-left: 100px;
+}
+#Burger .collumn{
+  display: flex;
+  gap: 100px;
+  margin-left: 100px;
+}
+#Fries label{
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+#Fries img{
+  width: 130px;
+  height: 130px;
+}
+#Fries .friessize{
+  display: flex;
+  column-gap: 50px;
+}
+#Fries select{
+  font-family: "Bitter", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+}
+#Quantity{
+  font-family: "Bitter", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 15px;
+}
+
+
+#Pasta label{
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+#Pasta img{
+  width: 120px;
+  height: 130px;
+}
+#Pasta figcaption{
+  text-align: center;
+  display: block;
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+  width: 110px;
+}
+
+#Drinks label{
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+#Drinks img{
+  width: 130px;
+  height: 130px;
+}
+#Drinks .friessize{
+  display: flex;
+  column-gap: 50px;
+}
+#Drinks select{
+  font-family: "Bitter", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+}
+
+
+
+#checkout figcaption{
+  text-align: center;
+  display: block;
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+  width: 110px;
+}
+#checkout .feedback legend{
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Georgia;
+  margin-bottom: 30px;
+  color: #DC453D;
+  text-shadow: 1px 2px #FDFD96;
+}
+
+#checkout .feedback label{
+  font-size: 20px;
+  font-family: Helvetica;
+  color: #DC453D;
+  text-shadow: 1px 2px #FDFD96; 
+}
+
+#checkout .order_form input{
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-family: Helvetica;
+}
